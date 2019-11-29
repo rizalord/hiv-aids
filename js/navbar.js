@@ -114,7 +114,7 @@ $(function(){
             }
             setTimeout(function () {
                 wait = true;
-            }, 700);
+            }, 1200);
         }
 
 
