@@ -324,6 +324,7 @@ nav ul li:hover a:not(.donate)::after {
   .list-donate a {
     text-align: center;
     margin: auto;
+    color: white;
   }
   /* hamburger */
   .hamburger {
