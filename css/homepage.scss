@@ -363,7 +363,7 @@ nav {
         border: 0px solid white;
         position: absolute;
         z-index: 1;
-        right: 5px;
+        right: 10px;
         top: 5px;
         cursor: pointer;
         -webkit-transition: 0s;
@@ -399,5 +399,29 @@ nav {
 
     .line:last-of-type {
         top: 24px;
+    }
+}
+
+@media (max-width : 500px){
+
+    .hamburger {
+        right: 5px;
+    }
+
+    nav {
+
+        padding : 0px;
+
+        h4{
+
+            padding-left: 0px;
+            margin-left: 10px;
+
+            &::after{
+                content: '';
+                display: none;
+            }
+
+        }
     }
 }
