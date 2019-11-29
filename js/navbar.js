@@ -122,4 +122,34 @@ $(function(){
 
     });
 
+    // page loader
+    $()
 });
+
+// menunggu semua gambar di load baru tampil halaman
+window.addEventListener('load', function () {
+
+
+    // (lagi) menuggu gambar team di load baru tampil halaman
+    let imageLoaded = 0;
+    document.querySelectorAll('img').forEach(function (e) {
+        imageLoaded++;
+    });
+
+
+    if (imageLoaded == 0) {
+        $('.lds-ellipsis').fadeOut(300);
+        $('.page-loader').fadeOut(800);
+        setTimeout(function () {
+            document.querySelector('.left-box h1').classList.add('animated');
+            document.querySelector('.left-box h1').classList.add('fadeInLeft');
+            document.querySelector('.left-box h1').classList.add('slow');
+        }, 400);
+    }
+
+});
+
+// donate transition
+$('.donate').on('mouseover' , function(e){
+    $(this).css('transition' , '30s');
+})
