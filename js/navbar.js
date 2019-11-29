@@ -9,7 +9,7 @@ $(function(){
     let nav = document.querySelector('nav');
     // let navMobile = document.querySelector('.nav-mobile');
     // let navTrans = document.querySelector('.nav-trans');
-    const listNav = document.querySelectorAll('nav ul li');
+    const listNav = document.querySelectorAll('nav ul li a');
     let jumlahClick = 1;
     let waitRespond = 'click';
     let wait = true;
@@ -50,11 +50,28 @@ $(function(){
     }
 
     listNav.forEach(function (e) {
-        e.addEventListener('click', function () {
-            if (jumlahClick != 1) {
-                closeNavbar();
-            }
+        e.addEventListener('click', function (ev) {
+            // ev.preventDefault();
+            // if (jumlahClick != 1) {
+                
+            //     l1.style.top = '7px';
+            //     l1.style.transform = 'rotate(0deg)';
+            //     l2.style.opacity = 1;
+
+            //     l3.style.top = '24px';
+            //     l3.style.transform = 'rotate(0deg)';
+            //     jumlahClick = 1;
+
+            //     l1.style.backgroundColor = 'rgba(0,0,0,0.8)';
+            //     l2.style.backgroundColor = 'rgba(0,0,0,0.8)';
+            //     l3.style.backgroundColor = 'rgba(0,0,0,0.8)';
+            //     hbg.style.transition = '0.5s';
+                
+            //     $('.nav-inside-wrapper').css('left', '0px');
+            //     $('.hamburger').fadeOut(500);
+            // }
         });
+
     })
 
     hbg.addEventListener(waitRespond, function () {
@@ -92,11 +109,12 @@ $(function(){
                     hbg.style.transition = '0s';
                 }, 1000);
             } else {
+                
                 closeNavbar();
             }
             setTimeout(function () {
                 wait = true;
-            }, 690);
+            }, 700);
         }
 
 
