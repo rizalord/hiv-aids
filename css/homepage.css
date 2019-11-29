@@ -69,4 +69,10 @@ body {
     line-height: 50px;
   }
 }
+
+@media (max-width: 516px) {
+  .container {
+    height: 280px;
+  }
+}
 /*# sourceMappingURL=homepage.css.map */
