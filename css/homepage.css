@@ -334,7 +334,7 @@ nav ul li:hover a:not(.donate)::after {
     border: 0px solid white;
     position: absolute;
     z-index: 1;
-    right: 10px;
+    right: 5px;
     top: 5px;
     cursor: pointer;
     -webkit-transition: 0s;
