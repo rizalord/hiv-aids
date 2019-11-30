@@ -32,7 +32,7 @@ $(function () {
 
     function closeNavbar() {
 
-        unfreeze();
+        
 
         l1.style.top = '7px';
         l1.style.transform = 'rotate(0deg)';
@@ -98,7 +98,7 @@ $(function () {
             wait = false;
             $('nav').css('transition', '0.5s ease');
             if (jumlahClick == 1) {
-                freeze();
+                
                 l1.style.top = '16px';
                 l1.style.transform = 'rotate(45deg)';
                 l2.style.opacity = 0;
@@ -147,7 +147,6 @@ $(function () {
 // menunggu semua gambar di load baru tampil halaman
 function imageload(selector, imageNum, callback) {
     let load = false;
-    freeze();
     window.addEventListener('load', function () {
 
 
@@ -162,7 +161,6 @@ function imageload(selector, imageNum, callback) {
             $('.lds-ellipsis').fadeOut(300);
             $('.page-loader').fadeOut(800);
             load = true;
-            unfreeze();
 
         }
         if (load == true) {
@@ -173,3 +171,23 @@ function imageload(selector, imageNum, callback) {
     });
 
 }
+
+// no scroll while fixed position
+let fixed = document.querySelectorAll('.page-loader , .nav-wrapper');
+
+
+fixed.forEach(function(evt){
+    evt.addEventListener('touchmove', function (e) {
+
+        e.preventDefault();
+
+    }, false);
+
+    evt.addEventListener('scroll', function (e) {
+
+        e.preventDefault();
+
+    }, false);
+
+
+});
