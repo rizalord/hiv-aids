@@ -133,11 +133,15 @@ table {
   border-spacing: 0;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   width: 100vw;
   height: 100%;
   overflow-x: hidden;
-  background-color: pink;
 }
 
 nav {
@@ -182,7 +186,6 @@ nav ul {
   float: right;
   height: 100%;
   overflow: hidden;
-  margin-right: calc(2 * 100px);
 }
 
 nav ul li {

@@ -1,5 +1,4 @@
-$(function(){
-    console.log('ok');
+$(function () {
 
     // hamburger nav
     let hbg = document.querySelector('.hamburger');
@@ -22,10 +21,10 @@ $(function(){
         l3.style.top = '24px';
         l3.style.transform = 'rotate(0deg)';
         jumlahClick = 1;
-        
 
-        
-        
+
+
+
 
 
 
@@ -53,7 +52,7 @@ $(function(){
         e.addEventListener('click', function (ev) {
             // ev.preventDefault();
             // if (jumlahClick != 1) {
-                
+
             //     l1.style.top = '7px';
             //     l1.style.transform = 'rotate(0deg)';
             //     l2.style.opacity = 1;
@@ -66,7 +65,7 @@ $(function(){
             //     l2.style.backgroundColor = 'rgba(0,0,0,0.8)';
             //     l3.style.backgroundColor = 'rgba(0,0,0,0.8)';
             //     hbg.style.transition = '0.5s';
-                
+
             //     $('.nav-inside-wrapper').css('left', '0px');
             //     $('.hamburger').fadeOut(500);
             // }
@@ -83,7 +82,7 @@ $(function(){
                 l1.style.transform = 'rotate(45deg)';
                 l2.style.opacity = 0;
 
-                $('.nav-wrapper').css('left' , '0px');
+                $('.nav-wrapper').css('left', '0px');
 
                 l3.style.top = '16px';
                 l3.style.transform = 'rotate(-45deg)';
@@ -109,7 +108,7 @@ $(function(){
                     hbg.style.transition = '0s';
                 }, 1000);
             } else {
-                
+
                 closeNavbar();
             }
             setTimeout(function () {
@@ -127,29 +126,31 @@ $(function(){
 });
 
 // menunggu semua gambar di load baru tampil halaman
-window.addEventListener('load', function () {
+function imageload(selector, imageNum , callback) {
+    let load = false;
+    window.addEventListener('load', function () {
 
 
-    // (lagi) menuggu gambar team di load baru tampil halaman
-    let imageLoaded = 0;
-    document.querySelectorAll('img').forEach(function (e) {
-        imageLoaded++;
+        // (lagi) menuggu gambar team di load baru tampil halaman
+        let imageLoaded = 0;
+        document.querySelectorAll(selector).forEach(function (e) {
+            imageLoaded++;
+        });
+
+
+        if (imageLoaded == imageNum) {
+            $('.lds-ellipsis').fadeOut(300);
+            $('.page-loader').fadeOut(800);
+            load = true;
+
+
+        }
+        if (load == true) {
+            callback();
+        }
+
+
     });
 
+}
 
-    if (imageLoaded == 0) {
-        $('.lds-ellipsis').fadeOut(300);
-        $('.page-loader').fadeOut(800);
-        setTimeout(function () {
-            document.querySelector('.left-box h1').classList.add('animated');
-            document.querySelector('.left-box h1').classList.add('fadeInLeft');
-            document.querySelector('.left-box h1').classList.add('slow');
-        }, 400);
-    }
-
-});
-
-// donate transition
-$('.donate').on('mouseover' , function(e){
-    $(this).css('transition' , '30s');
-})

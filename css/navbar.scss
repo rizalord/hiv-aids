@@ -135,11 +135,15 @@ table {
 }
 
 // REFIX CSS
+* {
+    box-sizing: border-box;
+}
+
 body {
     width: 100vw;
     height: 100%;
     overflow-x: hidden;
-    background-color: pink;
+    // background-color: pink;
 }
 
 // NAVBAR
@@ -185,9 +189,7 @@ nav {
         width: auto;
         float: right;
         height: 100%;
-        // background-color: red;
         overflow: hidden;
-        margin-right: calc(2 * 100px);
 
         li {
             
@@ -214,9 +216,8 @@ nav {
                 
 
                 &.donate {
-
-                    background: linear-gradient(90deg, #AA0FE7, #3819AC);
                     
+                    background: linear-gradient(90deg, #AA0FE7, #3819AC);
                     width: 120px;
                     height: 45px;
                     line-height: 45px;

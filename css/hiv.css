@@ -1,0 +1,115 @@
+.container-f {
+  width: 100%;
+  height: auto;
+  background-image: url(../img/map.png);
+  padding: 10px 15px;
+  padding-top: 50px;
+  margin-top: 50px;
+  padding-left: 18px;
+}
+
+.container-f .pengertian {
+  margin: auto;
+  width: 900px;
+  height: auto;
+}
+
+.container-f .img-wrapper:nth-of-type(odd) {
+  float: right;
+}
+
+.container-f .img-wrapper:nth-of-type(even) {
+  float: left;
+}
+
+.container-f .img-wrapper {
+  width: 350px;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 17px;
+}
+
+.container-f .img-wrapper img {
+  position: absolute;
+  display: block;
+  width: 310px;
+  height: 310px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.container-f .img-wrapper:last-of-type {
+  padding-right: 30px;
+}
+
+.container-f .img-wrapper:last-of-type img {
+  width: 300px;
+  height: 300px;
+}
+
+.container-f h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.container-f h1:last-of-type {
+  margin-top: 50px;
+}
+
+.container-f p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: left;
+  color: #505b6d;
+  display: block;
+  margin-top: 10px;
+}
+
+.container-f p:first-of-type {
+  margin-top: 20px;
+}
+
+.container-f p.indent {
+  text-indent: 30px;
+}
+
+.container-f p.boldr {
+  margin: 40px 0 24px 0;
+  font-size: 21px;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+}
+
+@media (max-width: 958px) {
+  .container-f {
+    padding: 10px 0px;
+  }
+  .pengertian {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 744px) {
+  .break {
+    clear: both;
+  }
+  .img-wrapper,
+  .img-wrapper img {
+    margin: auto;
+    float: none !important;
+    width: 250px !important;
+    height: 250px !important;
+  }
+}
+/*# sourceMappingURL=hiv.css.map */
