@@ -1,3 +1,18 @@
+function freeze() {
+    var top = window.scrollY;
+
+    document.body.style.overflow = 'hidden';
+
+    window.onscroll = function () {
+        window.scroll(0, top);
+    }
+}
+
+function unfreeze() {
+    document.body.style.overflow = '';
+    window.onscroll = null;
+}
+
 $(function () {
 
     // hamburger nav
@@ -13,7 +28,12 @@ $(function () {
     let waitRespond = 'click';
     let wait = true;
 
+    
+
     function closeNavbar() {
+
+        unfreeze();
+
         l1.style.top = '7px';
         l1.style.transform = 'rotate(0deg)';
         l2.style.opacity = 1;
@@ -78,6 +98,7 @@ $(function () {
             wait = false;
             $('nav').css('transition', '0.5s ease');
             if (jumlahClick == 1) {
+                freeze();
                 l1.style.top = '16px';
                 l1.style.transform = 'rotate(45deg)';
                 l2.style.opacity = 0;
@@ -121,13 +142,12 @@ $(function () {
 
     });
 
-    // page loader
-    $()
 });
 
 // menunggu semua gambar di load baru tampil halaman
-function imageload(selector, imageNum , callback) {
+function imageload(selector, imageNum, callback) {
     let load = false;
+    freeze();
     window.addEventListener('load', function () {
 
 
@@ -142,7 +162,7 @@ function imageload(selector, imageNum , callback) {
             $('.lds-ellipsis').fadeOut(300);
             $('.page-loader').fadeOut(800);
             load = true;
-
+            unfreeze();
 
         }
         if (load == true) {
@@ -153,4 +173,3 @@ function imageload(selector, imageNum , callback) {
     });
 
 }
-
