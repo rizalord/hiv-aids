@@ -109,6 +109,7 @@ $(function () {
                 l3.style.transform = 'rotate(-45deg)';
                 jumlahClick++;
                 // navMobile.style.display = 'block';
+                
 
                 // true nav
                 // navMobile.style.animation = 'swipeLeft 1s ease forwards';

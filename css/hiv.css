@@ -93,6 +93,7 @@
 @media (max-width: 958px) {
   .container-f {
     padding: 10px 0px;
+    padding-bottom: 50px;
   }
   .pengertian {
     padding-left: 15px;
