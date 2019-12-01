@@ -123,25 +123,25 @@ h1:last-of-type {
   .pengertian h1:first-of-type {
     margin-top: 0px !important;
   }
-  ul li {
+  .pengertian ul li {
     height: auto !important;
   }
-  ul li .icon {
+  .pengertian ul li .icon {
     width: 80px !important;
     height: 80px !important;
   }
-  ul li .icon .border-inside {
+  .pengertian ul li .icon .border-inside {
     width: 63px !important;
     height: 63px !important;
   }
-  ul li .icon .border-inside i {
+  .pengertian ul li .icon .border-inside i {
     font-size: 20px !important;
   }
-  ul li .text {
+  .pengertian ul li .text {
     width: calc(100% - 80px) !important;
     padding-top: 2.5px !important;
   }
-  ul li .text p {
+  .pengertian ul li .text p {
     position: static !important;
   }
 }
