@@ -6,6 +6,10 @@
   text-align: center;
 }
 
+.container-f .pengertian h1 {
+  font-family: 'Akrobat Light', 'Poppins', sans-serif;
+}
+
 .container-f .pengertian h1:first-of-type {
   margin-bottom: 13px;
 }

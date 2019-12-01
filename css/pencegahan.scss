@@ -6,6 +6,10 @@ $sizeIcon : 120px;
     .pengertian {
         text-align: center;
 
+        h1 {
+            font-family: 'Akrobat Light', 'Poppins', sans-serif;
+        }
+
         h1:first-of-type {
             margin-bottom: 13px;
         }
@@ -137,8 +141,8 @@ h1:last-of-type {
 
 @media (max-width : 977px) {
 
-    .pengertian h1:first-of-type{
-        margin-top: 0px!important;
+    .pengertian h1:first-of-type {
+        margin-top: 0px !important;
     }
 
     ul li {
@@ -206,21 +210,23 @@ h1:last-of-type {
     .pengertian {
         h1 {
             font-size: 28px;
-            margin-bottom: -5px!important;
+            margin-bottom: -5px !important;
         }
-        small{
-            font-size: 14px!important;
+
+        small {
+            font-size: 14px !important;
         }
     }
 }
 
 
 
-ul:nth-of-type(2){
-    li{
-        .icon , 
+ul:nth-of-type(2) {
+    li {
+
+        .icon,
         .text {
-            float: right!important;
+            float: right !important;
         }
 
         &:nth-child(1) .border-inside {

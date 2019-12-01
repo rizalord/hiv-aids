@@ -296,6 +296,10 @@ nav {
 }
 
 @media (max-width : 960px){
+    // a.active::after {
+    //     border-bottom: 2px dotted black!important;
+    // }
+
     nav {
         padding: 0 5%;
         overflow: visible;
