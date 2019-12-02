@@ -162,6 +162,10 @@
 }
 
 @media (max-width : 722px){
+    .pengertian {
+        padding-left: 0px!important;
+        padding-right: 0px!important;
+    }
 
     .left-content{
         height: 330px!important;
@@ -190,10 +194,15 @@
 
     .right-content{
         padding : 20px 5px!important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
     }
 
 }
 
-.html {
+html {
     overflow-x: hidden!important;
+}
+body , .container-f{
+    position: relative!important;
 }
