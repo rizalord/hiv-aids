@@ -22,8 +22,8 @@ ul:last-of-type li:nth-child(even) .text {
 }
 
 ul:nth-of-type(1) li:nth-child(1) .border-inside {
-  background: -webkit-gradient(linear, left top, right top, from(#b993d6), to(#8ca6db));
-  background: linear-gradient(90deg, #b993d6, #8ca6db);
+  background: -webkit-gradient(linear, left top, right top, from(#89216B), to(#DA4453));
+  background: linear-gradient(90deg, #89216B, #DA4453);
 }
 
 ul:nth-of-type(1) li:nth-child(2) .border-inside {
@@ -37,8 +37,7 @@ ul:nth-of-type(1) li:nth-child(3) .border-inside {
 }
 
 ul:nth-of-type(2) li:nth-child(1) .border-inside {
-  background: -webkit-gradient(linear, left top, right top, from(#e53935), to(#e35d5b));
-  background: linear-gradient(90deg, #e53935, #e35d5b);
+  background: linear-gradient(240deg, #e53935, #f77e7c);
 }
 
 ul:nth-of-type(2) li:nth-child(2) .border-inside {

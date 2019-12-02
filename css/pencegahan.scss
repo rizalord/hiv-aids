@@ -42,7 +42,7 @@ $sizeIcon : 120px;
                     display: inline-block;
                     width: 120px;
                     height: 100%;
-                    border: 1px solid black;
+                    border: 1px solid rgba(0,0,0,0.6);
                     float: left;
                     position: relative;
                     border-radius: 120px;
@@ -118,7 +118,7 @@ ul:first-of-type li {
     }
 
     &:nth-child(2) .border-inside {
-        background: linear-gradient(90deg, #FFA659, #FE6174);
+        background: linear-gradient(90deg, #FE6174, #FFA659);
     }
 
     &:nth-child(3) .border-inside {
@@ -130,7 +130,7 @@ ul:first-of-type li {
     }
 
     &:nth-child(5) .border-inside {
-        background: linear-gradient(90deg, #d66d75, #e29587);
+        background: linear-gradient(90deg, #d46871, #eba497);
     }
 }
 
@@ -234,7 +234,7 @@ ul:nth-of-type(2) {
         }
 
         &:nth-child(2) .border-inside {
-            background: linear-gradient(90deg, #4568dc, #b06ab3);
+            background: linear-gradient(90deg, #b06ab3, #4568dc);
         }
 
         &:nth-child(3) .border-inside {

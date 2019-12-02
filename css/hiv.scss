@@ -13,7 +13,7 @@
 
     .pengertian {
         margin: auto;
-        width: 900px;
+        width: 1070px;
         height: auto;
     }
     
@@ -56,14 +56,14 @@
     }
 
     h1 {
-        font-family: 'Poppins',
+        font-family: 'Akrobat Light',
             sans-serif;
         font-size: 40px;
         font-weight: 700;
         line-height: 60px;
         text-align: center;
         margin-bottom: 40px;
-
+        color : #2186CE;
         
     }
 
@@ -71,14 +71,14 @@
     }
 
     h1:last-of-type{
-        margin-top: 50px;
+        margin-top: 100px;
     }
 
     p {
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         font-size: 16px;
         line-height: 28px;
-        text-align: left;
+        text-align: justify;
         color: rgb(80, 91, 109);
         display: block;
         
@@ -108,8 +108,8 @@
 
 }
 
-@media (max-width : 958px){
 
+@media (max-width : 1156px){
 
     .container-f{
 

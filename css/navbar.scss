@@ -155,7 +155,7 @@ nav {
     width: 100%;
     height: 60px;
     box-shadow: 0px 1px 4px 4px rgba(0, 0, 0, 0.2);
-    background: linear-gradient(120deg, rgb(146, 83, 255), #418BFE);
+    background: linear-gradient(240deg, #3D37BE, #05D1DD);
     z-index: 1;
 
     h4 {
@@ -166,22 +166,23 @@ nav {
         width: auto;
         padding: 0 50px;
         // background-color: red;
-        color: #2C3E50;
+        color: rgb(255, 255, 255);
         font-family: Poppins, sans-serif;
         font-size: 20px;
         font-weight: 700;
         line-height: 60px;
         position: relative;
 
-        &::after {
-            content: '';
-            position: absolute;
-            background-color: rgba(255, 255, 255, 0.5);
-            right: 0px;
-            top: 10px;
-            bottom: 10px;
-            width: 1px;
-        }
+        // &::after {
+            
+        //     content: '';
+        //     position: absolute;
+        //     background-color: rgba(255, 255, 255, 0.5);
+        //     right: 0px;
+        //     top: 10px;
+        //     bottom: 10px;
+        //     width: 1px;
+        // }
     }
 
     ul {
@@ -213,38 +214,48 @@ nav {
                 font-weight: 500;
                 line-height: 60px;
                 color: rgba(248, 248, 255, 0.99);
+                // transition: 3s;
                 
 
                 &.donate {
                     
-                    background: linear-gradient(90deg, #AA0FE7, #3819AC);
+                    background: linear-gradient(100deg, rgb(15, 163, 231), #3819AC);
                     width: 120px;
                     height: 45px;
                     line-height: 45px;
                     border-radius: 30px;
                 }
 
+                &:not(.donate)::after{
+                    transition: opacity 0.4s;
+                    content: '';
+                    position: absolute;
+                    bottom : 10px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 10px;
+                    height: 1px;
+                    border-bottom: 2px dotted white;
+                    opacity: 0;
+                }
+
 
             }
 
+     
+
             &.list-donate:hover a.donate {
                 
-                background: linear-gradient(90deg, #AA0FE7, rgb(161, 13, 219), rgb(142, 9, 194));
+                background: linear-gradient(240deg, rgb(15, 163, 231), #3819AC);
                 
             }
 
             &:hover a:not(.donate)::after{
-                content: '';
-                position: absolute;
-                bottom : 10px;
-                left: 50%;
-                transform: translateX(-50%);
-                width: 10px;
-                height: 1px;
-                border-bottom: 2px dotted white;
+                opacity: 1;
             }
 
             a.active::after {
+                opacity: 1;
                 content: '';
                 position: absolute;
                 bottom: 10px;
@@ -303,7 +314,13 @@ nav {
     nav {
         padding: 0 5%;
         overflow: visible;
-        position: static;
+        position: relative;
+
+        h4{
+            position: absolute;
+            left : 50%;
+            transform: translateX(-50%);
+        }
 
         .nav-wrapper{
             z-index: 1;
@@ -398,7 +415,7 @@ nav {
         display: block;
         width: 50%;
         height: 1px;
-        background-color: rgba(90, 90, 90, 0.9);
+        background-color: rgba(255, 255, 255, 0.9);
         margin-top: 7px;
         margin-left: auto;
         margin-right: auto;

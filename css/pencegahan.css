@@ -41,7 +41,7 @@
   display: inline-block;
   width: 120px;
   height: 100%;
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.6);
   float: left;
   position: relative;
   border-radius: 120px;
@@ -95,8 +95,8 @@ ul:first-of-type li:nth-child(1) .border-inside {
 }
 
 ul:first-of-type li:nth-child(2) .border-inside {
-  background: -webkit-gradient(linear, left top, right top, from(#FFA659), to(#FE6174));
-  background: linear-gradient(90deg, #FFA659, #FE6174);
+  background: -webkit-gradient(linear, left top, right top, from(#FE6174), to(#FFA659));
+  background: linear-gradient(90deg, #FE6174, #FFA659);
 }
 
 ul:first-of-type li:nth-child(3) .border-inside {
@@ -110,8 +110,8 @@ ul:first-of-type li:nth-child(4) .border-inside {
 }
 
 ul:first-of-type li:nth-child(5) .border-inside {
-  background: -webkit-gradient(linear, left top, right top, from(#d66d75), to(#e29587));
-  background: linear-gradient(90deg, #d66d75, #e29587);
+  background: -webkit-gradient(linear, left top, right top, from(#d46871), to(#eba497));
+  background: linear-gradient(90deg, #d46871, #eba497);
 }
 
 h1:last-of-type {
@@ -185,8 +185,8 @@ ul:nth-of-type(2) li:nth-child(1) .border-inside {
 }
 
 ul:nth-of-type(2) li:nth-child(2) .border-inside {
-  background: -webkit-gradient(linear, left top, right top, from(#4568dc), to(#b06ab3));
-  background: linear-gradient(90deg, #4568dc, #b06ab3);
+  background: -webkit-gradient(linear, left top, right top, from(#b06ab3), to(#4568dc));
+  background: linear-gradient(90deg, #b06ab3, #4568dc);
 }
 
 ul:nth-of-type(2) li:nth-child(3) .border-inside {

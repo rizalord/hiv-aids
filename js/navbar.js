@@ -49,9 +49,9 @@ $(function () {
 
 
         // hbg.style.border = '1px solid rgba(255,255,255,1)';
-        l1.style.backgroundColor = 'rgba(0,0,0,0.8)';
-        l2.style.backgroundColor = 'rgba(0,0,0,0.8)';
-        l3.style.backgroundColor = 'rgba(0,0,0,0.8)';
+        l1.style.backgroundColor = 'rgba(255,255,255,0.9)';
+        l2.style.backgroundColor = 'rgba(255,255,255,0.9)';
+        l3.style.backgroundColor = 'rgba(255,255,255,0.9)';
         // kh5.style.color = 'white';
         // kh5.style.transition = '2s';
         hbg.style.transition = '0.5s';

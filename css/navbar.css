@@ -152,7 +152,7 @@ nav {
   height: 60px;
   -webkit-box-shadow: 0px 1px 4px 4px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 4px 4px rgba(0, 0, 0, 0.2);
-  background: linear-gradient(120deg, #9253ff, #418BFE);
+  background: linear-gradient(240deg, #3D37BE, #05D1DD);
   z-index: 1;
 }
 
@@ -162,22 +162,12 @@ nav h4 {
   height: 100%;
   width: auto;
   padding: 0 50px;
-  color: #2C3E50;
+  color: white;
   font-family: Poppins, sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 60px;
   position: relative;
-}
-
-nav h4::after {
-  content: '';
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0.5);
-  right: 0px;
-  top: 10px;
-  bottom: 10px;
-  width: 1px;
 }
 
 nav ul {
@@ -211,20 +201,16 @@ nav ul li a {
 }
 
 nav ul li a.donate {
-  background: -webkit-gradient(linear, left top, right top, from(#AA0FE7), to(#3819AC));
-  background: linear-gradient(90deg, #AA0FE7, #3819AC);
+  background: linear-gradient(100deg, #0fa3e7, #3819AC);
   width: 120px;
   height: 45px;
   line-height: 45px;
   border-radius: 30px;
 }
 
-nav ul li.list-donate:hover a.donate {
-  background: -webkit-gradient(linear, left top, right top, from(#AA0FE7), color-stop(#a10ddb), to(#8e09c2));
-  background: linear-gradient(90deg, #AA0FE7, #a10ddb, #8e09c2);
-}
-
-nav ul li:hover a:not(.donate)::after {
+nav ul li a:not(.donate)::after {
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
   content: '';
   position: absolute;
   bottom: 10px;
@@ -234,9 +220,19 @@ nav ul li:hover a:not(.donate)::after {
   width: 10px;
   height: 1px;
   border-bottom: 2px dotted white;
+  opacity: 0;
+}
+
+nav ul li.list-donate:hover a.donate {
+  background: linear-gradient(240deg, #0fa3e7, #3819AC);
+}
+
+nav ul li:hover a:not(.donate)::after {
+  opacity: 1;
 }
 
 nav ul li a.active::after {
+  opacity: 1;
   content: '';
   position: absolute;
   bottom: 10px;
@@ -277,7 +273,13 @@ nav ul li a.active::after {
   nav {
     padding: 0 5%;
     overflow: visible;
-    position: static;
+    position: relative;
+  }
+  nav h4 {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
   nav .nav-wrapper {
     z-index: 1;
@@ -362,7 +364,7 @@ nav ul li a.active::after {
     display: block;
     width: 50%;
     height: 1px;
-    background-color: rgba(90, 90, 90, 0.9);
+    background-color: rgba(255, 255, 255, 0.9);
     margin-top: 7px;
     margin-left: auto;
     margin-right: auto;

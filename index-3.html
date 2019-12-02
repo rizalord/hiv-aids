@@ -55,7 +55,7 @@
                 <li><a href="index-2.html">HIV</a></li>
                 <li><a href="index-3.html" class="active">Penularan</a></li>
                 <li><a href="index-4.html" >Pencegahan</a></li>
-                <li><a href="">Tentang</a></li>
+                <li><a href="index-5.html">Tentang</a></li>
                 <li class="list-donate"><a href="" class="donate">Donate</a></li>
             </ul>
         </div>
@@ -232,19 +232,20 @@
 
             $('.whatishiv').addClass('animated fadeInUp delay-1s');
             $('.sm').addClass('animated fadeInUp');
-            $('.sm').css('animation-delay', '1.5s');
+            $('.sm').css('animation-delay', '1.2s');
             $('small').css('animation-duration', '0.7s');
+            $('.sm').css('animation-duration', '0.9s');
 
             $('.pengertian ul:first-of-type li:nth-child(1)').addClass('animated fadeInLeft')
-            $('.pengertian ul:first-of-type li:nth-child(1)').css('animation-delay' , '2.2s');
+            $('.pengertian ul:first-of-type li:nth-child(1)').css('animation-delay' , '1.8s');
             $('.pengertian ul:first-of-type li:nth-child(1)').css('animation-duration' , '0.8s');
 
             $('.pengertian ul:first-of-type li:nth-child(2)').addClass('animated fadeInRight')
-            $('.pengertian ul:first-of-type li:nth-child(2)').css('animation-delay' , '2.4s');
+            $('.pengertian ul:first-of-type li:nth-child(2)').css('animation-delay' , '1.8s');
             $('.pengertian ul:first-of-type li:nth-child(2)').css('animation-duration' , '0.8s');
 
             $('.pengertian ul:first-of-type li:nth-child(3)').addClass('animated fadeInLeft')
-            $('.pengertian ul:first-of-type li:nth-child(3)').css('animation-delay' , '2.5s');
+            $('.pengertian ul:first-of-type li:nth-child(3)').css('animation-delay' , '1.8s');
             $('.pengertian ul:first-of-type li:nth-child(2)').css('animation-duration' , '0.8s');
 
             AOS.init();
@@ -252,7 +253,9 @@
             
         });
 
-        
+        $(".list-donate").on('mouseover' ,function(){
+            $(".donate").animate({background: 'linear-gradient(100deg, rgb(15, 163, 231), rgb(15, 163, 231))'} , 'slow');
+        });
     </script>
 
 </body>
