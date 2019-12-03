@@ -81,6 +81,7 @@
   position: relative;
   margin: 0px 5px;
   border: 0px;
+  border-radius: 40px;
 }
 
 .horizontal-view .content .left-content .border-img ul .list-wrapper li a {

@@ -730,10 +730,10 @@ nav ul li a.active::after {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  /* border-top-left-radius: 15px;
+  border-top-right-radius: 15px; */
+  /* border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px; */
   background: -webkit-gradient(linear, left bottom, left top, from(#3B3CBF), to(#07C9DB));
   background: linear-gradient(0deg, #3B3CBF, #07C9DB);
 }
@@ -771,16 +771,16 @@ nav ul li a.active::after {
 
  /* ================================================== FOOTER ===================================================== */
  footer {
-   margin-top: 50px;
+   margin-top: 0px;
    display: block;
    width: 100%;
    height: auto;
    /* background-color: orange; */
-   background-image: url('../img/footer.png');
+   background-image: url('../img/fiuter.png');
    background-repeat: no-repeat;
    background-size: 100% 100%;
    padding: 15px 10%;
-   padding-top: 170px;
+   padding-top: 200px;
    /* padding-bottom: 50px; */
  }
 
