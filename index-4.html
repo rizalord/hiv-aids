@@ -37,7 +37,7 @@
     <!-- end pageloader -->
 
     <nav>
-        <h4>AIDScare</h4>
+        <h4> <a href="index.html">AIDScare </a></h4>
 
         <div class="hamburger">
             <div class="line"></div>
@@ -54,20 +54,39 @@
                 <li><a href="index-3.html" >Penularan</a></li>
                 <li><a href="index-4.html" class="active">Pencegahan</a></li>
                 <li><a href="index-5.html">Tentang</a></li>
-                <li class="list-donate"><a href="" class="donate">Donate</a></li>
+                <li class="list-donate"><a href="" class="donate">Donasi</a></li>
             </ul>
         </div>
     </nav>
 
 
     <!-- container -->
+    <div class="pop-up">
+        <div class="inside-pop-up">
+            <div class="header-pop-up">
+                <p>Donasi HIV</p>
+                <i class="fas fa-times closeup"></i>
+            </div>
+
+            <div class="content-pop">
+            </div>
+
+            <a href="http://yaids.com/donasi-bank-transfer/" class="donasi-btn">Donasi Sekarang</a>
+        </div>
+    </div>
+
+    <!-- scrollup navigation -->
+    <div class="scrup">
+        <i class="fas fa-chevron-up scup"></i>
+    </div>
+
 
 
     <div class="container-f">
         <section class="pengertian">
 
             <h1 class="whatishiv">Cara Mencegah HIV ?</h1>
-            <small>Berikut ini adalah langkah - langkah mencegah infeksi HIV.</small>
+            <small class="sm">Berikut ini adalah langkah - langkah mencegah infeksi HIV.</small>
 
             <ul>
                 <li>
@@ -152,11 +171,12 @@
 
             <!-- Part 2 -->
 
-            <h1 class="whatishiv">Perawatan HIV</h1>
-            <small>Berikut ini adalah langkah - langkah perawatan HIV.</small>
+            <h1 data-aos="fade-up" data-aos-duration="700">Perawatan HIV</h1>
+            <small data-aos="fade-up" data-aos-duration="800">Berikut ini adalah langkah - langkah perawatan
+                HIV.</small>
             
             <ul>
-                <li>
+                <li data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
                     <div class="icon">
                         <div class="border-inside">
                             <i class="fas fa-user-md"></i>
@@ -171,7 +191,7 @@
                     <div class="break"></div>
                 </li>
             
-                <li>
+                <li data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
                     <div class="icon">
                         <div class="border-inside">
                             <i class="fas fa-stethoscope"></i>
@@ -187,7 +207,7 @@
                     <div class="break"></div>
                 </li>
             
-                <li>
+                <li data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
                     <div class="icon">
                         <div class="border-inside">
                             <i class="fas fa-capsules"></i>
@@ -204,7 +224,7 @@
                 </li>
             
             
-                <li>
+                <li data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
                     <div class="icon">
                         <div class="border-inside">
                             <i class="fas fa-user-md"></i>
@@ -229,6 +249,55 @@
 
     <!-- end of container -->
 
+    <!-- footer -->
+    <footer>
+        <div class="side-side">
+            <ul>
+                <li>
+                    <h3>Explore</h3>
+                </li>
+                <li class="page-scroll"><a href="#home">Home</a></li>
+                <li class="page-scroll"><a href="#pahlawan">HIV</a></li>
+                <li class="page-scroll"><a href="#team">Penularan</a></li>
+                <li class="page-scroll"><a href="#team">Pencegahan</a></li>
+                <li class="page-scroll"><a href="#team">Tentang</a></li>
+            </ul>
+
+        </div>
+
+        <div class="side-side">
+            <ul>
+                <li>
+                    <h3>Ahmad Rizal</h3>
+                </li>
+                <li><a href="https://www.instagram.com/ahmad.khamdani2/">Instagram</a></li>
+                <li><a href="https://web.facebook.com/lexeto.farron">Facebook</a></li>
+                <li><a href="https://twitter.com/Rizal92183683">Twitter</a></li>
+                <li><a href="https://github.com/rizalord">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/ahmad-khamdani-7a4815169/">LinkedIn</a></li>
+
+
+            </ul>
+
+        </div>
+
+        <div class="side-side">
+            <ul>
+                <li>
+                    <h3>Kukuh Wildan</h3>
+                </li>
+                <li><a href="https://www.instagram.com/kukuhwildan/">Instagram</a></li>
+                <li><a href="https://web.facebook.com/kuwildansyah.kuwildansyah">Facebook</a></li>
+                <li><a href="https://twitter.com/kukuhwildansyah">Twitter</a></li>
+
+            </ul>
+
+        </div>
+        <div class="break-left"></div>
+
+        <p class="copyright">&copy; 2019 AIDScare | All right reserved.</p>
+    </footer>
+
 
 
 
@@ -246,6 +315,33 @@
             // $('small').addClass('animated fadeInUp');
             // $('small').css('animation-delay', '1.5s');
             // $('small').css('animation-duration', '1s');
+
+            $('.whatishiv').addClass('animated fadeInUp delay-1s');
+            $('.sm').addClass('animated fadeInUp');
+            $('.sm').css('animation-delay', '1.2s');
+            $('small').css('animation-duration', '0.7s');
+            $('.sm').css('animation-duration', '0.9s');
+
+            $('.pengertian ul:first-of-type li:nth-child(1)').addClass('animated fadeInUp')
+            $('.pengertian ul:first-of-type li:nth-child(1)').css('animation-delay' , '1.8s');
+            $('.pengertian ul:first-of-type li:nth-child(1)').css('animation-duration' , '0.8s');
+
+            $('.pengertian ul:first-of-type li:nth-child(2)').addClass('animated fadeInUp')
+            $('.pengertian ul:first-of-type li:nth-child(2)').css('animation-delay' , '2s');
+            $('.pengertian ul:first-of-type li:nth-child(2)').css('animation-duration' , '0.8s');
+
+            $('.pengertian ul:first-of-type li:nth-child(3)').addClass('animated fadeInUp')
+            $('.pengertian ul:first-of-type li:nth-child(3)').css('animation-delay' , '2.1s');
+            $('.pengertian ul:first-of-type li:nth-child(3)').css('animation-duration' , '0.8s');
+
+            $('.pengertian ul:first-of-type li:nth-child(4)').addClass('animated fadeInUp')
+            $('.pengertian ul:first-of-type li:nth-child(4)').css('animation-delay' , '2.2s');
+            $('.pengertian ul:first-of-type li:nth-child(4)').css('animation-duration' , '0.8s');
+
+            $('.pengertian ul:first-of-type li:nth-child(5)').addClass('animated fadeInUp')
+            $('.pengertian ul:first-of-type li:nth-child(5)').css('animation-delay' , '2.3s');
+            $('.pengertian ul:first-of-type li:nth-child(5)').css('animation-duration' , '0.8s');
+            
         });
 
         AOS.init();

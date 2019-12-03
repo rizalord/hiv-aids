@@ -28,11 +28,11 @@ $(function () {
     let waitRespond = 'click';
     let wait = true;
 
-    
+
 
     function closeNavbar() {
 
-        
+
 
         l1.style.top = '7px';
         l1.style.transform = 'rotate(0deg)';
@@ -59,7 +59,7 @@ $(function () {
         setTimeout(() => {
             // navMobile.style.animation = 'swipeRight 1s ease forwards';
             $('.nav-wrapper').css('left', '100%');
-        }, 1000);
+        }, 770);
         hbg.style.transition = '0.5s';
         setTimeout(() => {
             hbg.style.transition = '0s';
@@ -98,7 +98,7 @@ $(function () {
             wait = false;
             $('nav').css('transition', '0.5s ease');
             if (jumlahClick == 1) {
-                
+
                 l1.style.top = '16px';
                 l1.style.transform = 'rotate(45deg)';
                 l2.style.opacity = 0;
@@ -109,7 +109,7 @@ $(function () {
                 l3.style.transform = 'rotate(-45deg)';
                 jumlahClick++;
                 // navMobile.style.display = 'block';
-                
+
 
                 // true nav
                 // navMobile.style.animation = 'swipeLeft 1s ease forwards';
@@ -125,7 +125,7 @@ $(function () {
                 setTimeout(() => {
                     // navTrans.style.animation = 'swipeRight 0.8s ease forwards';
                     $('.nav-inside-wrapper').css('left', '100%');
-                }, 750);
+                }, 770);
                 setTimeout(() => {
                     hbg.style.transition = '0s';
                 }, 1000);
@@ -142,6 +142,103 @@ $(function () {
 
 
     });
+
+    // donasi
+    let showup = false;
+    $('.list-donate').on('click', function (e) {
+        e.preventDefault();
+
+        if ($(window).innerWidth() <= 950) {
+            closeNavbar();
+            setTimeout(() => {
+                $('.pop-up').fadeIn(500);
+                $('html , body').css('overflow-y', 'hidden');
+                showup = true;
+            }, 1000);
+        } else {
+            $('.pop-up').fadeIn(500);
+            $('html , body').css('overflow-y', 'hidden');
+            showup = true;
+        }
+
+
+
+    })
+
+    $('.pop-up').on('click', function (e) {
+        if (e.target == $('.pop-up')[0] || e.target == $('.closeup')[0]) {
+            $('.pop-up').fadeOut(500);
+            $('html , body').css('overflow-y', 'unset');
+            showup = false;
+        }
+    });
+
+    $(document).keyup(function (e) {
+        if (e.key === "Escape") {
+            if (showup) {
+                $('.pop-up').fadeOut(500);
+                $('html , body').css('overflow-y', 'unset');
+                showup = false;
+            }
+        }
+    });
+
+    // scrolling up
+    window.onscroll = function (e) {
+        var scrollY = window.pageYOffset || document.documentElement.scrollTop;
+        var header = document.querySelector('nav');
+
+        e.preventDefault();
+        console.log('scrollY = ' + scrollY);
+        console.log('lastscroll = ' + this.lastScroll);
+        
+        
+        
+
+        if (scrollY <= this.lastScroll) {
+            
+            // header.style.visibility = 'visible';
+            $('nav').fadeIn();
+            // setTimeout(() => {
+            //     $('nav').css('visibility', 'visible!important');
+            // }, 200);
+            this.lastScroll = scrollY;
+        } else {
+            // header.style.visibility = 'hidden';
+            if ($(window).innerWidth() <= 950) {
+                this.lastScroll = this.lastScroll;
+            }else{
+                $('nav').fadeOut();
+                this.lastScroll = scrollY;
+            }
+            
+            // setTimeout(() => {
+            //     $('nav').css('visibility' , 'hidden!important');
+            // }, 200);
+        }
+
+
+
+        
+    }
+
+    // scroll top button
+    $(window).on('scroll' , function(e){
+        if(window.scrollY >= 200){
+            $('.scrup').fadeIn(500);
+        }else{
+            $('.scrup').fadeOut(500);
+        }
+        
+    });
+
+
+    $(".scrup").click(function () {
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
+
+   
 
 });
 
@@ -177,7 +274,7 @@ function imageload(selector, imageNum, callback) {
 let fixed = document.querySelectorAll('.page-loader , .nav-wrapper');
 
 
-fixed.forEach(function(evt){
+fixed.forEach(function (evt) {
     evt.addEventListener('touchmove', function (e) {
 
         e.preventDefault();

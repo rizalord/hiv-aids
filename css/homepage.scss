@@ -1,26 +1,26 @@
-body{
+body {
     background-color: transparent;
-    background-image : url(../img/home-bg-2.jpg);
+    background-image: url(../img/home-bg-2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.container{
-    margin : 20px 0 0 20px;
-    width : 650px;
+.container {
+    margin: 20px 0 0 20px;
+    width: 650px;
     height: 360px;
-    padding : 5px;
+    padding: 5px;
     padding-left: 30px;
     // background-color: red;
     position: relative;
 
-    h1{
-        z-index: 0!important;
+    h1 {
+        z-index: 0 !important;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         font-family: 'Akrobat Semibold',
-        sans-serif;
+            sans-serif;
         font-size: 50px;
         font-weight: 500;
         line-height: 65px;
@@ -31,42 +31,42 @@ body{
         height: 150px;
         margin: 0 0 16px 0;
 
-        a{
+        a {
             font-family: 'Poppins',
-            sans-serif;
+                sans-serif;
             font-size: 14px;
             font-weight: 600;
             line-height: 35px;
             text-decoration: none;
             display: block;
-            width: 120px;
+            width: 160px;
             border-radius: 30px;
             text-align: center;
             height: auto;
-            padding : 5px 20px;
+            padding: 5px 25px;
             margin-top: 30px;
             background: linear-gradient(90deg, #9A5DFE, #3E8DFE);
             color: white;
 
-            &:hover{
+            &:hover {
                 background: linear-gradient(90deg, #9A5DFE, #9A5DFE);
             }
         }
     }
 }
 
-@media (max-width : 790px){
+@media (max-width : 790px) {
 
 
     .container {
-        margin : 0px 0px;
-        padding : 10px 0%;
+        margin: 0px 0px;
+        padding: 10px 0%;
         width: 100%;
         // background-color: red;
 
-        h1{
-            margin : 0px;
-            padding : 10px 15px;
+        h1 {
+            margin: 0px;
+            padding: 10px 15px;
             // background-color: pink;
             font-size: 40px;
             font-weight: 500;
@@ -78,9 +78,9 @@ body{
 
 }
 
-@media (max-width : 516px){
+@media (max-width : 516px) {
 
-    .container{
+    .container {
         height: 280px;
     }
 }

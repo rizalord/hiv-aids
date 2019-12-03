@@ -1,15 +1,30 @@
 
+
 .container-f {
     
     // background-color: salmon;
     width: 100%;
     height: auto;
-    background-image: url(../img/map.png);
+    
     padding: 10px 15px;
     padding-bottom: 100px;
     padding-top: 50px;
-    margin-top: 50px;
+    margin-top: 10px;
     padding-left: 18px;
+    position: relative;
+
+    &::after{
+        content: '';
+        position: absolute;
+        background-image: url(../img/map.png);
+        top : 0px;
+        left : 0px;
+        right: 0px;
+        bottom: 0px;
+        opacity: .5;
+        z-index: -1;
+
+    }
 
     .pengertian {
         margin: auto;
@@ -27,23 +42,33 @@
 
     .img-wrapper {
         
-        width: 350px;
-        height: 350px;
-        // background-color: red;
+        width: 305px;
+        height: 305px;
+        
         position: relative;
         overflow: hidden;
         margin-bottom: 17px;
+        // border : 1px solid black;
+        
+        border-radius: 15px;
+
+        &.kokam{
+            background: linear-gradient(120deg, #06CEDC, #3B3DBF);
+            margin-left: 23px;
+            margin-bottom: 0px;
+        }
 
         img {
             position: absolute;
             display: block;
-            width: 310px;
-            height: 310px;
+            width: 290px;
+            height: 290px;
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
 
-            
+            // border : 1px solid black;
+            border-radius: 15px;
         }
     }
 
@@ -94,10 +119,10 @@
 
         &.boldr{
             margin : 40px 0 24px 0;
-            font-size: 21px;
+            font-size: 25px;
             font-weight: 600;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: black;
+            font-family:'Akrobat Regular' , 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #3A3EBF;
         }
 
     }
@@ -135,11 +160,20 @@
 
     .img-wrapper , 
     .img-wrapper img{
-        margin : auto;
+        margin : auto!important;
         float: none!important;
-        width: 250px!important;    
-        height: 250px!important;
+        
 
+    }
+
+    .img-wrapper img{
+        width: 250px !important;
+        height: 250px !important;
+    }
+
+    .img-wrapper{
+        width: 265px!important;
+        height: 265px!important;
     }
 
 

@@ -1,7 +1,3 @@
-.container-f {
-  padding-top: 10px;
-}
-
 .container-f .pengertian {
   text-align: center;
 }
@@ -74,6 +70,7 @@
   float: left;
   width: calc(100% - 120px);
   height: 100%;
+  padding-right: 25px;
   position: relative;
 }
 
@@ -87,6 +84,7 @@
   font-size: 15.8px;
   line-height: 24px;
   color: #505b6d;
+  padding-right: 20px;
 }
 
 ul:first-of-type li:nth-child(1) .border-inside {

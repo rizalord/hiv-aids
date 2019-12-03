@@ -1,12 +1,24 @@
 .container-f {
   width: 100%;
   height: auto;
-  background-image: url(../img/map.png);
   padding: 10px 15px;
   padding-bottom: 100px;
-  padding-top: 50px;
-  margin-top: 50px;
+  /* padding-top: 50px; */
+  margin-top: 80px;
   padding-left: 18px;
+  position: relative;
+}
+
+.container-f::after {
+  content: '';
+  position: absolute;
+  background-image: url(../img/map.png);
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  opacity: .5;
+  z-index: -1;
 }
 
 .container-f .pengertian {
@@ -24,22 +36,30 @@
 }
 
 .container-f .img-wrapper {
-  width: 350px;
-  height: 350px;
+  width: 305px;
+  height: 305px;
   position: relative;
   overflow: hidden;
   margin-bottom: 17px;
+  border-radius: 15px;
+}
+
+.container-f .img-wrapper.kokam {
+  background: linear-gradient(120deg, #06CEDC, #3B3DBF);
+  margin-left: 23px;
+  margin-bottom: 0px;
 }
 
 .container-f .img-wrapper img {
   position: absolute;
   display: block;
-  width: 310px;
-  height: 310px;
+  width: 290px;
+  height: 290px;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  border-radius: 10px;
 }
 
 .container-f .img-wrapper:last-of-type {
@@ -52,7 +72,8 @@
 }
 
 .container-f h1 {
-  font-family: 'Akrobat Light', sans-serif;
+  font-family: 'Akrobat Light',
+ sans-serif;
   font-size: 40px;
   font-weight: 700;
   line-height: 60px;
@@ -85,10 +106,10 @@
 
 .container-f p.boldr {
   margin: 40px 0 24px 0;
-  font-size: 21px;
+  font-size: 25px;
   font-weight: 600;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: black;
+  font-family: 'Akrobat Regular' , 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #3A3EBF;
 }
 
 @media (max-width: 1156px) {
@@ -109,10 +130,16 @@
   }
   .img-wrapper,
   .img-wrapper img {
-    margin: auto;
+    margin: auto !important;
     float: none !important;
+  }
+  .img-wrapper img {
     width: 250px !important;
     height: 250px !important;
+  }
+  .img-wrapper {
+    width: 265px !important;
+    height: 265px !important;
   }
 }
 /*# sourceMappingURL=hiv.css.map */

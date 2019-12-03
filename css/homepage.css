@@ -3,12 +3,13 @@ body {
   background-image: url(../img/home-bg-2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .container {
   margin: 20px 0 0 20px;
   width: 650px;
-  height: 360px;
+  height: 70vh!important;
   padding: 5px;
   padding-left: 30px;
   position: relative;
@@ -20,7 +21,8 @@ body {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  font-family: 'Akrobat Semibold', sans-serif;
+  font-family: 'Akrobat Semibold',
+ sans-serif;
   font-size: 50px;
   font-weight: 500;
   line-height: 65px;
@@ -33,17 +35,18 @@ body {
 }
 
 .container h1 a {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins',
+ sans-serif;
   font-size: 14px;
   font-weight: 600;
   line-height: 35px;
   text-decoration: none;
   display: block;
-  width: 120px;
+  width: 160px;
   border-radius: 30px;
   text-align: center;
   height: auto;
-  padding: 5px 20px;
+  padding: 5px 25px;
   margin-top: 30px;
   background: -webkit-gradient(linear, left top, right top, from(#9A5DFE), to(#3E8DFE));
   background: linear-gradient(90deg, #9A5DFE, #3E8DFE);
