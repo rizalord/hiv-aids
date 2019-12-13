@@ -10,6 +10,7 @@ body {
   background-repeat: no-repeat;
   overflow: hidden!important;
   height: 100vh;
+  /* background-position-y: -30px; */
 }
 
 html{
@@ -60,14 +61,14 @@ html{
   height: auto;
   padding: 5px 25px;
   margin-top: 20px;
-  background: -webkit-gradient(linear, left top, right top, from(#9A5DFE), to(#3E8DFE));
-  background: linear-gradient(90deg, #9A5DFE, #3E8DFE);
+  background: -webkit-gradient(linear, left top, right top, from(#3D37BE), to(#05D1DD));
+  background: linear-gradient(240deg, #3D37BE, #05D1DD);
   color: white;
 }
 
 .container h1 a:hover {
-  background: -webkit-gradient(linear, left top, right top, from(#9A5DFE), to(#9A5DFE));
-  background: linear-gradient(90deg, #9A5DFE, #9A5DFE);
+  background: -webkit-gradient(linear, left top, right top, from(#3D37BE), to(#3D37BE));
+  background: linear-gradient(240deg, #3D37BE, #3D37BE);
 }
 
 @media (max-width: 790px) {
@@ -151,4 +152,7 @@ html{
     padding : 10px 0px;
   }
 }
+
+
+
 /*# sourceMappingURL=homepage.css.map */

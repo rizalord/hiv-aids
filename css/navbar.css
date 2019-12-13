@@ -171,7 +171,7 @@ nav h4 {
   position: relative;
 }
 
-nav h4 a{
+nav h4 a {
   color: white;
   text-decoration: none;
 }
@@ -341,7 +341,7 @@ nav ul li a.active::after {
   nav .nav-wrapper {
     z-index: 1;
     -webkit-transition: 1s;
-    transition: 0.7s;
+    transition: 0.5s;
     position: fixed;
     top: 0px;
     bottom: 0px;
@@ -484,7 +484,7 @@ nav ul li a.active::after {
   right: 0px;
   top: 0px;
   bottom: 0px;
-  background: linear-gradient(120deg, #3B3BBF, #06CCDC) !important;
+  background: linear-gradient(300deg, #3B3BBF, #06CCDC) !important;
 }
 
 .lds-ellipsis {
@@ -628,13 +628,14 @@ nav ul li a.active::after {
 
   border: 1px solid rgba(20, 201, 247, 0.8);
   border-radius: 4px;
+  
 
 }
 
 .pop-up .inside-pop-up .header-pop-up {
   width: 100%;
   height: 50px;
-  background: linear-gradient(0deg, rgb(20, 201, 247), #11AFD6);
+  background: linear-gradient(270deg, #3D37BE, #05D1DD);
 }
 
 .header-pop-up p {
@@ -651,16 +652,17 @@ nav ul li a.active::after {
   right: 15px;
   top: 15px;
   font-size: 17px;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.9);
   cursor: pointer;
 }
 
 .content-pop {
   width: 100%;
   height: calc(100% - 50px);
-  background-image: url(../img/donate.jpg);
-  background-size: 100% !important;
-  filter: grayscale(0.65) blur(.5px);
+  background-image: url(../img/hiv-02.jpg);
+  background-size: 100% 100% !important;
+  filter:  blur(.5px);
+  background-position-y: -15px;
 
 }
 
@@ -670,7 +672,7 @@ nav ul li a.active::after {
   min-width: 209px;
   display: block;
   padding: 15px 20px;
-  background: linear-gradient(0deg, #f2a347, #edbd45);
+  background: linear-gradient(270deg, #3D37BE, #05D1DD);
   border-radius: 10px;
   color: white;
   bottom: 10px;
@@ -682,9 +684,37 @@ nav ul li a.active::after {
 
 }
 
-.donasi-btn:hover {
+.donasi-btn::after {
+  content: 'Donasi Sekarang';
+  position: absolute;
+  text-align: center;
+  
+  display: block;
+  padding: 15px 20px;
+  background: white;
+  border-radius: 10px;
+  color: #3D37BE;
+  text-decoration: none;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  font-family: 'Poppins',
+    sans-serif;
+  font-size: 20px;
+  opacity: 0!important;
+}
+
+
+
+/* .donasi-btn:hover {
   transition: color 0.4s;
   color: rgba(255, 255, 255, 0.5);
+} */
+
+.donasi-btn:hover::after{
+  transition: opacity 0.5s;
+  opacity: 1!important;
 }
 
 @media (max-width: 914px) {
@@ -759,9 +789,9 @@ nav ul li a.active::after {
 
 .scup {
   position: absolute;
-  left : 50%;
-  top : 50%;
-  transform: translate(-50% , -50%);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   font-size: 20px;
   color: white;
   cursor: pointer;
@@ -769,180 +799,203 @@ nav ul li a.active::after {
 
 
 
- /* ================================================== FOOTER ===================================================== */
- footer {
-   margin-top: 0px;
-   display: block;
-   width: 100%;
-   height: auto;
-   /* background-color: orange; */
-   background-image: url('../img/fiuter.png');
-   background-repeat: no-repeat;
-   background-size: 100% 100%;
-   padding: 15px 10%;
-   padding-top: 200px;
-   /* padding-bottom: 50px; */
- }
+/* ================================================== FOOTER ===================================================== */
+footer {
+  margin-top: 0px;
+  display: block;
+  width: 100%;
+  height: auto;
+  /* background-color: orange; */
+  background-image: url('../img/fiuter.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 15px 10%;
+  padding-top: 300px;
+  /* padding-bottom: 50px; */
+}
 
- footer .side-side {
-   width: 30%;
-   display: inline-block;
-   height: auto;
-   /* background-color: red; */
-   float: left;
-   margin: 0px 15px;
- }
-
-
- .side-side ul {
-   width: 100%;
-   height: auto;
-   /* background-color: pink; */
- }
+footer .side-side {
+  width: 30%;
+  display: inline-block;
+  height: auto;
+  /* background-color: red; */
+  float: left;
+  margin: 0px 15px;
+}
 
 
-
- .side-side ul li {
-
-   height: 52.5px;
-   width: 100%;
-   border-bottom: 2px solid rgb(243, 244, 252);
-   padding: 13px 0 13px 0;
- }
-
- .side-side ul li h3 {
-   font-family: 'Montserrat',
-     sans-serif;
-   font-size: 30px;
-   font-weight: 500;
-   line-height: auto;
-   height: auto;
-   display: block;
-
-   text-decoration: none solid rgb(255, 255, 255);
-   text-align: left;
-   text-transform: uppercase;
-   word-spacing: 0px;
-   color: #ffffff;
-
- }
-
- .side-side ul li:first-child {
-   height: auto;
-   border-bottom: 0px;
-   padding: 0;
-
-   padding-bottom: 5px;
-   /* background-color: red; */
- }
-
- .side-side ul li:last-child {
-   border-bottom: 0px dotted #E3E6FC;
- }
-
- .side-side ul li a {
-   display: block;
-   width: 100%;
-   height: 100%;
-   font-family: 'Montserrat',
-     sans-serif;
-   font-size: 16px;
-   line-height: 24px;
-   text-decoration: none solid rgb(255, 255, 255);
-   word-spacing: 0px;
-   color: #FFFFFF;
- }
-
- @media (max-width : 1125px) {
-   footer {
-     padding: 15px 5%;
-   }
-
-   footer .side-side {
-     width: 27%;
-     display: inline-block;
-     height: auto;
-     /* background-color: red; */
-     float: left;
-     margin: 0px 15px;
-   }
-
-   .side-side ul li h3 {
-     font-family: Poppins,
-       sans-serif;
-     font-size: 20px;
-     font-weight: 600;
-     line-height: 30.5px;
-     height: 52.5px;
-     display: block;
-
-     text-decoration: none solid rgb(255, 255, 255);
-     text-align: left;
-     text-transform: uppercase;
-     word-spacing: 0px;
-     color: #ffffff;
-
-   }
-
-   .side-side ul li:first-child {
-     height: auto;
-     padding-bottom: 5px;
-   }
- }
-
- @media (max-width : 657px) {
-   footer {
-
-     padding: 15px 30px;
-     padding-top: 75px;
-     background-repeat: no-repeat;
-     background-size: cover;
-     overflow: hidden;
-   }
-
-   footer .side-side {
-     width: 100%;
-     display: inline-block;
-     height: auto;
-     /* background-color: red; */
-
-     float: none;
-     margin: 0px 0px;
-
-   }
-
-   .side-side ul li h3 {
-     height: auto;
-   }
-
-   .side-side ul li:first-child {
-     margin-top: 40px;
-     height: auto;
-     padding-bottom: 0px;
-     /* background-color: red; */
-   }
- }
+.side-side ul {
+  width: 100%;
+  height: auto;
+  /* background-color: pink; */
+}
 
 
- .copyright {
-   margin-top: 70px;
-   font-family: "Open Sans",
-     sans-serif;
-   font-size: 16px;
-   line-height: 26px;
-   text-decoration: none solid rgb(227, 230, 252);
-   text-align: left;
-   word-spacing: 0px;
-   color: rgb(227, 230, 252);
- }
 
- @media (max-width : 657px) {
-   .copyright {
-     text-align: center;
-   }
- }
+.side-side ul li {
 
- .break-left{
-   clear: left;
- }
+  height: 52.5px;
+  width: 100%;
+  border-bottom: 1px solid rgb(243, 244, 252);
+  padding: 13px 0 13px 0;
+}
+
+.side-side ul li h3 {
+  font-family: 'Poppins',
+    sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: auto;
+  height: auto;
+  display: block;
+
+  text-decoration: none solid rgb(255, 255, 255);
+  text-align: left;
+  /* text-transform: uppercase; */
+  word-spacing: 0px;
+  color: #ffffff;
+
+}
+
+.side-side ul li:first-child {
+  height: auto;
+  border-bottom: 0px;
+  padding: 0;
+
+  padding-bottom: 5px;
+  /* background-color: red; */
+}
+
+.side-side ul li:last-child {
+  border-bottom: 0px dotted #E3E6FC;
+}
+
+.side-side ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-family: 'Poppins',
+    sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none solid rgb(255, 255, 255);
+  word-spacing: 0px;
+  color: #FFFFFF;
+}
+
+.side-side ul li:hover a{
+  font-weight: bold;
+}
+
+@media (max-width : 1125px) {
+  footer {
+    padding: 15px 5%;
+  }
+
+  footer .side-side {
+    width: 27%;
+    display: inline-block;
+    height: auto;
+    /* background-color: red; */
+    float: left;
+    margin: 0px 15px;
+  }
+
+  .side-side ul li h3 {
+    font-family: Poppins,
+      sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30.5px;
+    height: 52.5px;
+    display: block;
+
+    text-decoration: none solid rgb(255, 255, 255);
+    text-align: left;
+    text-transform: uppercase;
+    word-spacing: 0px;
+    color: #ffffff;
+
+  }
+
+  .side-side ul li:first-child {
+    height: auto;
+    padding-bottom: 5px;
+  }
+}
+
+@media (max-width : 657px) {
+  footer {
+
+    padding: 15px 30px;
+    padding-top: 75px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  footer .side-side {
+    width: 100%;
+    display: inline-block;
+    height: auto;
+    /* background-color: red; */
+
+    float: none;
+    margin: 0px 0px;
+
+  }
+
+  .side-side ul li h3 {
+    height: auto;
+  }
+
+  .side-side ul li:first-child {
+    margin-top: 40px;
+    height: auto;
+    padding-bottom: 0px;
+    /* background-color: red; */
+  }
+}
+
+
+.copyright {
+  margin-top: 70px;
+  font-family: "Open Sans",
+    sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  text-decoration: none solid rgb(227, 230, 252);
+  text-align: left;
+  word-spacing: 0px;
+  color: rgb(227, 230, 252);
+}
+
+@media (max-width : 657px) {
+  .copyright {
+    text-align: center;
+  }
+}
+
+.break-left {
+  clear: left;
+}
+
+@media (max-width : 450px){
+  .donasi-btn{
+    min-width: 190px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: white;
+    font-size: 17px;
+  }
+
+  .donasi-btn::after {
+    content: 'Donasi Sekarang';
+    padding: 10px 15px;
+    background: white;
+    color: #3D37BE;
+    font-size: 17px;
+  }
+
+}
 /*# sourceMappingURL=navbar.css.map */

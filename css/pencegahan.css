@@ -11,7 +11,8 @@
 }
 
 .container-f .pengertian small {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans",
+    sans-serif;
   font-size: 16px;
   line-height: 26px;
   color: #505b6d;
@@ -48,7 +49,7 @@
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 96px;
   height: 96px;
   border-radius: 120px;
@@ -60,7 +61,7 @@
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   color: white;
 }
 
@@ -79,8 +80,9 @@
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  font-family: 'Montserrat', sans-serif;
+  transform: translateY(-50%);
+  font-family: 'Montserrat',
+    sans-serif;
   font-size: 15.8px;
   line-height: 24px;
   color: #505b6d;
@@ -121,24 +123,30 @@ h1:last-of-type {
   .pengertian h1:first-of-type {
     margin-top: 0px !important;
   }
+
   .pengertian ul li {
     height: auto !important;
   }
+
   .pengertian ul li .icon {
     width: 80px !important;
     height: 80px !important;
   }
+
   .pengertian ul li .icon .border-inside {
     width: 63px !important;
     height: 63px !important;
   }
+
   .pengertian ul li .icon .border-inside i {
     font-size: 20px !important;
   }
+
   .pengertian ul li .text {
     width: calc(100% - 80px) !important;
     padding-top: 2.5px !important;
   }
+
   .pengertian ul li .text p {
     position: static !important;
   }
@@ -149,24 +157,30 @@ h1:last-of-type {
     width: 68px !important;
     height: 68px !important;
   }
+
   ul li .icon .border-inside {
     width: 50px !important;
     height: 50px !important;
   }
+
   ul li .icon .border-inside i {
     font-size: 20px !important;
   }
+
   ul li .text {
     padding-top: 2.5px !important;
     width: calc(100% - 68px) !important;
   }
+
   ul li .text p {
     position: static !important;
   }
+
   .pengertian h1 {
     font-size: 28px;
     margin-bottom: -5px !important;
   }
+
   .pengertian small {
     font-size: 14px !important;
   }
@@ -199,5 +213,49 @@ ul:nth-of-type(2) li:nth-child(4) .border-inside {
 
 .break {
   clear: both;
+
+}
+
+.kolep .icon {
+  border: none !important;
+
+}
+
+.kolep ul:nth-of-type(1) li:nth-child(1) .border-inside {
+  box-shadow: rgba(202, 26, 174, 0.7) 0px 4px 8px 0px;
+}
+
+.kolep ul:nth-of-type(1) li:nth-child(2) .border-inside {
+  box-shadow: rgba(255, 156, 93, 0.7) 0px 4px 8px 0px;
+}
+
+.kolep ul:nth-of-type(1) li:nth-child(2) .border-inside {
+  box-shadow: rgba(254, 108, 112, 0.7) 0px 4px 8px 0px;
+}
+
+.kolep ul:nth-of-type(1) li:nth-child(3) .border-inside {
+  box-shadow: rgba(65, 85, 201, 0.7) 0px 4px 8px 0px;
+}
+
+.kolep ul:nth-of-type(1) li:nth-child(4) .border-inside {
+  box-shadow: rgba(108, 185, 61, 0.7) 0px 4px 8px 0px;
+}
+
+.kolep ul:nth-of-type(1) li:nth-child(5) .border-inside {
+  box-shadow: #D66B73 0px 4px 8px 0px;
+}
+
+
+.kolep ul:nth-of-type(2) li:nth-child(1) .border-inside {
+  box-shadow: rgba(53, 175, 206, 0.7) 0px 4px 8px 0px;
+}
+.kolep ul:nth-of-type(2) li:nth-child(2) .border-inside {
+  box-shadow: rgba(75, 107, 224,0.7) 0px 4px 8px 0px;
+}
+.kolep ul:nth-of-type(2) li:nth-child(3) .border-inside {
+  box-shadow: rgba(236, 55, 72, 0.7) 0px 4px 8px 0px;
+}
+.kolep ul:nth-of-type(2) li:nth-child(4) .border-inside {
+  box-shadow: rgba(89, 173, 49, 0.7) 0px 4px 8px 0px;
 }
 /*# sourceMappingURL=pencegahan.css.map */

@@ -46,8 +46,9 @@
 
 .container-f .img-wrapper.kokam {
   background: linear-gradient(120deg, #06CEDC, #3B3DBF);
-  margin-left: 23px;
+  margin-right: 23px;
   margin-bottom: 0px;
+  float: left;
 }
 
 .container-f .img-wrapper img {

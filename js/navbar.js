@@ -59,7 +59,7 @@ $(function () {
         setTimeout(() => {
             // navMobile.style.animation = 'swipeRight 1s ease forwards';
             $('.nav-wrapper').css('left', '100%');
-        }, 770);
+        }, 500);
         hbg.style.transition = '0.5s';
         setTimeout(() => {
             hbg.style.transition = '0s';
@@ -125,7 +125,7 @@ $(function () {
                 setTimeout(() => {
                     // navTrans.style.animation = 'swipeRight 0.8s ease forwards';
                     $('.nav-inside-wrapper').css('left', '100%');
-                }, 770);
+                }, 500);
                 setTimeout(() => {
                     hbg.style.transition = '0s';
                 }, 1000);
@@ -189,8 +189,6 @@ $(function () {
         var header = document.querySelector('nav');
 
         e.preventDefault();
-        console.log('scrollY = ' + scrollY);
-        console.log('lastscroll = ' + this.lastScroll);
         
         
         
